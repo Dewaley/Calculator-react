@@ -24,6 +24,7 @@ function App() {
       setResult("ERROR");
     }
   };
+  const theme = document.getElementsByClassName
   return (
     <div className="container">
       <div className="main-container">
@@ -33,10 +34,12 @@ function App() {
             <h3>THEME</h3>
             <div className="theme">
               <div className="top">
-                1 2 3
+                <span onClick={toggleTheme}>1</span>
+                <span onClick={toggleTheme}>2</span>
+                <span onClick={toggleTheme}>3</span>
               </div>
               <div className="bottom">
-                <span></span>
+                <span className="check"></span>
               </div>
             </div>
           </div>
