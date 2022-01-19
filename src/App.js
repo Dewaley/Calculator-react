@@ -24,7 +24,10 @@ function App() {
       setResult("ERROR");
     }
   };
-  const theme = document.getElementsByClassName
+  const toggleTheme2 = (e) => {
+    const bottom = document.getElementsByClassName("bottom")
+    bottom.style.justifyContent = "center"
+  }
   return (
     <div className="container">
       <div className="main-container">
@@ -34,9 +37,9 @@ function App() {
             <h3>THEME</h3>
             <div className="theme">
               <div className="top">
-                <span onClick={toggleTheme}>1</span>
-                <span onClick={toggleTheme}>2</span>
-                <span onClick={toggleTheme}>3</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
               </div>
               <div className="bottom">
                 <span className="check"></span>
