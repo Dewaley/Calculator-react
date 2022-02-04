@@ -15,7 +15,11 @@ function App() {
     setResult('')
   }
   const clear = (e) => {
-    setResult(result.slice(0, -1))
+    if (result == 'ERROR') {
+      setResult('')
+    } else {
+      setResult(result.slice(0, -1))
+    }
   }
   const solve = (e) => {
     try {
