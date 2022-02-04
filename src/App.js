@@ -97,7 +97,7 @@ function App() {
             <button name="/" onClick={handleClick}>
               /
             </button>
-            <button name="x" onClick={handleClick}>
+            <button name="*" onClick={handleClick}>
               x
             </button>
             <button className="rem reset" onClick={clearAll}>
