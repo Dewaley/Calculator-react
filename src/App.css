@@ -87,6 +87,9 @@ button {
   font-size: 17px;
   font-weight: bold;
 }
+button:active {
+  box-shadow: inset 0px 3px hsl(28, 16%, 65%);
+}
 .rem {
   background-color: hsl(225, 21%, 49%);
   box-shadow: 0px 3px hsl(224, 28%, 35%);
