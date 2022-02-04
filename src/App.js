@@ -33,7 +33,6 @@ function App() {
     bottom.style.justifyContent = 'center'
   }
   return (
-    <div className='container'>
       <div className='main-container'>
         <header>
           <h1>calc</h1>
@@ -113,7 +112,6 @@ function App() {
           </div>
         </div>
       </div>
-    </div>
   )
 }
 
