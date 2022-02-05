@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
 * {
   margin: 0;
   padding: 0;
 }
-body {
+.container {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
@@ -11,8 +11,11 @@ body {
   justify-content: center;
   align-items: center;
   background-color: hsl(222, 26%, 31%);
-  font-family: "Spartan", sans-serif;
+  font-family: 'Spartan', sans-serif;
   font-weight: 700;
+}
+span {
+  cursor: pointer;
 }
 .main-container {
   display: flex;
@@ -107,7 +110,7 @@ button:active {
 .equate:active {
   box-shadow: inset 0px 3px hsl(6, 70%, 34%);
 }
-header h1{
+header h1 {
   font-size: 20px;
 }
 .right h3 {
@@ -117,11 +120,99 @@ header h1{
 .top {
   display: flex;
   justify-content: space-between;
+  font-size: 10px;
 }
 .theme2 {
-  padding: 0 10px;
+  margin: 0 10px;
 }
-@media screen and (max-width:375px) {
+.secondTheme .container {
+  background-color: hsl(0, 0%, 90%);
+}
+.thirdTheme .container {
+  background-color: hsl(268, 75%, 9%);
+}
+.secondTheme .container .main-container header {
+  color: hsl(60, 10%, 19%);
+}
+.thirdTheme .container .main-container header {
+  color: hsl(52, 100%, 62%);
+}
+.secondTheme .container .main-container header .bottom {
+  background-color: hsl(0, 5%, 81%);
+  justify-content: center;
+}
+.secondTheme .container .main-container header .bottom .check {
+  background-color: hsl(25, 98%, 40%);
+}
+.secondTheme .container .main-container input {
+  background-color: hsl(0, 0%, 93%);
+  color: hsl(60, 10%, 19%);
+}
+.secondTheme .container .main-container .keypad {
+  background-color: hsl(0, 5%, 81%);
+}
+.secondTheme .container .main-container .keypad button {
+  background-color: hsl(45, 7%, 89%);
+  box-shadow: 0px 3px hsl(35, 11%, 61%);
+}
+.secondTheme .container .main-container .keypad button:active {
+  box-shadow: inset 0px 3px hsl(35, 11%, 61%);
+}
+.secondTheme .container .main-container .keypad .rem {
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0px 3px hsl(185, 58%, 25%);
+  color: white;
+}
+.secondTheme .container .main-container .keypad .rem:active {
+  box-shadow: inset 0px 3px hsl(185, 58%, 25%);
+}
+.secondTheme .container .main-container .keypad .equate {
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: 0px 3px hsl(25, 99%, 27%);
+  color: white;
+}
+.secondTheme .container .main-container .keypad .equate:active {
+  box-shadow: inset 0px 3px hsl(25, 99%, 27%);
+}
+.thirdTheme .container .main-container header .bottom {
+  background-color: hsl(268, 71%, 12%);
+  justify-content: flex-end;
+}
+.thirdTheme .container .main-container header .bottom .check {
+  background-color: hsl(176, 100%, 44%);
+}
+.thirdTheme .container .main-container input {
+  color: hsl(52, 100%, 62%);
+  background-color: hsl(268, 71%, 12%);
+}
+.thirdTheme .container .main-container .keypad {
+  background-color: hsl(268, 71%, 12%);
+}
+.thirdTheme .container .main-container .keypad button {
+  color: hsl(52, 100%, 62%);
+  background-color: hsl(268, 47%, 21%);
+  box-shadow: 0px 3px hsl(290, 70%, 36%);
+}
+.thirdTheme .container .main-container .keypad button:active {
+  box-shadow: inset 0px 3px hsl(290, 70%, 36%);
+}
+.thirdTheme .container .main-container .keypad .rem {
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: 0px 3px hsl(285, 91%, 52%);
+  color: white;
+}
+.thirdTheme .container .main-container .keypad .rem:active {
+  box-shadow: inset 0px 3px hsl(285, 91%, 52%);
+}
+.thirdTheme .container .main-container .keypad .equate {
+  background-color: hsl(176, 100%, 44%);
+  color: black;
+  box-shadow: 0px 3px hsl(177, 92%, 70%);
+}
+.thirdTheme .container .main-container .keypad .equate:active {
+  box-shadow: inset 0px 3px hsl(177, 92%, 70%);
+}
+@media screen and (max-width: 375px) {
   .main-container {
     width: 90vw;
   }
