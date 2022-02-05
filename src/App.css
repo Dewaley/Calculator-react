@@ -120,7 +120,7 @@ header h1 {
 .top {
   display: flex;
   justify-content: space-between;
-  font-size: 10px;
+  font-size: 13px;
 }
 .theme2 {
   margin: 0 10px;
