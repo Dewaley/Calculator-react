@@ -65,6 +65,7 @@ const toggleTheme = (theme) => {
     setColorTheme(theme);
     localStorage.setItem('theme-number', theme);
 };
+```
 
 ## Author
 
